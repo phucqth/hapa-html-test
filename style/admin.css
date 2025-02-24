@@ -1,0 +1,360 @@
+/* RIGHT CONTENT */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: "Public Sans", serif;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+}
+
+i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+aside {
+  background-color: #263952;
+  width: 240px;
+  padding-top: 18px;
+  color: #fff;
+  padding-inline: 10px;
+}
+
+aside .logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+aside .logo img {
+  width: 150px;
+  height: 32px;
+}
+
+aside .logo i {
+  font-size: 24px;
+}
+
+aside .menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+aside .menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  list-style-type: none;
+}
+
+aside .menu ul li {
+  display: flex;
+  justify-content: space-between;
+}
+
+aside .menu ul li span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+aside .menu ul li span i {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+}
+
+aside .menu ul .sub-menu {
+  display: flex;
+  margin-left: 34px;
+}
+
+content {
+  background-color: #f2f4f6;
+  width: calc(100% - 240px);
+}
+
+content .topbar {
+  background-color: #fefefe;
+  height: 52px;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  padding-inline: 43px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+content .topbar .breadcrumb {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+content .topbar .breadcrumb ul {
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+content .topbar .breadcrumb ul i {
+  display: flex;
+  align-items: center;
+  color: #989898;
+}
+
+content .topbar .breadcrumb ul li:first-child {
+  color: #989898;
+}
+
+content .topbar .account {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  font-size: 14px;
+  gap: 15px;
+}
+
+content .topbar .account img {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
+
+content .title {
+  padding-inline: 42px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+content .title h1 {
+  font-size: 24px;
+  color: #323232;
+}
+
+content .content {
+  padding-inline: 30px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.card .card-header {
+  height: 68px;
+  border-bottom: #e1e1e1 2px solid;
+}
+
+.card .card-header .item {
+  width: fit-content;
+  height: 68px;
+  color: #0076db;
+  border-bottom: #0076db 3px solid;
+  padding: 22px;
+  font-weight: bold;
+}
+
+.card .card-content .filter {
+  display: flex;
+  flex-direction: row;
+  padding: 22px;
+}
+
+.card .card-content .filter .search {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  width: 420px;
+  height: 36px;
+  border: 1px solid #ccc;
+  padding-inline: 17px;
+}
+
+.card .card-content .filter .search .search-icon {
+  color: #989898;
+  font-weight: bold;
+}
+
+.card .card-content .filter .search input {
+  width: 420px;
+  border: none;
+  outline: none;
+}
+
+.card .card-content .filter .custom-select {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  gap: 10px;
+}
+
+.card .card-content .filter .custom-select select {
+  width: 245px;
+  height: 36px;
+  border: 1px solid #ccc;
+  padding-inline: 17px;
+  appearance: none;
+}
+
+.card .card-content .filter .custom-select i {
+  color: #989898;
+  position: absolute;
+  right: 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.card .card-content .filter .other {
+  display: flex;
+  flex-direction: row;
+  padding-inline: 17px;
+  justify-content: space-between;
+  align-items: center;
+  width: 180px;
+  height: 36px;
+  border: 1px solid #ccc;
+}
+
+.card .card-content .filter .other i {
+  color: #989898;
+}
+
+table {
+  width: 100%;
+  border: none;
+  border-collapse: collapse;
+}
+
+table tr {
+  border: none;
+  height: 52px;
+  /* Create a custom checkbox */
+  /* Style the custom checkbox when checked */
+}
+
+table tr input[type='checkbox'] {
+  display: none;
+}
+
+table tr.product-row {
+  border-top: 2px solid #e7e9ea;
+}
+
+table tr.expand-row {
+  background-color: #f0f9fe;
+}
+
+table tr.expand-row td i {
+  cursor: pointer;
+  color: #0076db;
+}
+
+table tr.sub-row {
+  border-top: none;
+  background-color: #eff8fd;
+}
+
+table tr .custom-checkbox {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border: 2px solid #b1b1b1;
+  cursor: pointer;
+}
+
+table tr input[type='checkbox']:checked + .custom-checkbox {
+  background-color: gray;
+}
+
+table tr th {
+  background-color: #e7e9ea;
+  border: none;
+  border-color: #e7e9ea;
+  color: #323232;
+}
+
+table tr th.expand {
+  cursor: pointer;
+  width: 100px;
+}
+
+table tr .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table tr td.product-name {
+  color: #0076db;
+  cursor: pointer;
+}
+
+table tr td i {
+  cursor: pointer;
+  color: #989898;
+}
+
+table tr td .sub-table {
+  margin-bottom: 26px;
+}
+
+table tr td .sub-table tr th {
+  background-color: #fff;
+}
+
+table tr td .sub-table tr.sub-product-row {
+  border-top: 1px solid #e7e9ea;
+  background-color: #fff;
+}
+
+table tr td .sub-table tr .sub-product-name {
+  color: #0076db;
+}
+
+.btn {
+  background-color: #0076db;
+  color: #fff;
+  border-radius: 5px;
+  width: 114px;
+  height: 36px;
+  padding-inline: 8px;
+  border: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 14.4px;
+}
+
+.btn i {
+  font-size: 24px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}

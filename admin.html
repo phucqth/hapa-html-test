@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/style/admin.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+        />
+        <title>HAPA Test</title>
+    </head>
+    <body class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <img
+                    src="img/logo-hapa-vn-new-white.webp"
+                    alt="logo"
+                    width="217px"
+                    height="50px"
+                />
+                <i class="bi bi-three-dots-vertical"></i>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <span>
+                            <i class="bi bi-house-door-fill"></i>Menu 1
+                        </span>
+                    </li>
+                    <li>
+                        <span> <i class="bi bi-cart-fill"></i>Menu 2 </span>
+                    </li>
+                    <li>
+                        <span>
+                            <i class="bi bi-megaphone-fill"></i>Menu 3
+                        </span>
+                    </li>
+                    <li>
+                        <span><i class="bi bi-person-fill"></i>Menu 4</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </li>
+                    <div class="sub-menu">
+                        <ul>
+                            <li>Menu 4.1</li>
+                            <li>Menu 4.2</li>
+                            <li>Menu 4.3</li>
+                        </ul>
+                    </div>
+                    <li>
+                        <span><i class="bi bi-person-fill"></i>Menu 5</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </li>
+                    <div class="sub-menu">
+                        <ul>
+                            <li>Menu 5.1</li>
+                            <li>Menu 5.2</li>
+                            <li>Menu 5.3</li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+        </aside>
+        <content>
+            <div class="topbar">
+                <div class="breadcrumb">
+                    <ul>
+                        <li>Trang chủ</li>
+                        <i class="bi bi-chevron-right"></i>
+                        <li>Sản phẩm</li>
+                    </ul>
+                </div>
+                <div class="account">
+                    <img
+                        src="img/song-nhu-loai-kien.jpg"
+                        alt="avatar"
+                        class="avatar"
+                    />
+                    <span>Nguyễn Chí Toàn</span>
+                    <i class="bi bi-chevron-down"></i>
+                </div>
+            </div>
+            <div class="title">
+                <h1>Sản phẩm</h1>
+                <button type="button" class="btn">
+                    <i class="bi-plus"></i>
+                    Tạo mới
+                </button>
+            </div>
+            <div class="content">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="item">Tất cả</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="filter">
+                            <div class="search">
+                                <i class="bi bi-search search-icon"></i>
+                                <input
+                                    type="text"
+                                    placeholder="Tìm theo tên Sản phẩm gốc, Mã SKU sản phẩm"
+                                />
+                            </div>
+
+                            <div class="custom-select">
+                                <select>
+                                    <option>Thương hiệu</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                </select>
+                                <i class="bi bi-caret-down-fill"></i>
+                            </div>
+                            <div class="other">
+                                Bộ lọc khác
+                                <i class="bi bi-funnel-fill"></i>
+                            </div>
+                        </div>
+
+                        <table>
+                            <tr>
+                                <th class="expand"></th>
+                                <th style="text-align: center; width: 30px">
+                                    <label>
+                                        <input type="checkbox" />
+                                        <span class="custom-checkbox"></span>
+                                    </label>
+                                </th>
+                                <th style="text-align: center; width: 52px">
+                                    Ảnh
+                                </th>
+                                <th style="text-align: left; width: 320px">
+                                    Sản phẩm gốc
+                                </th>
+                                <th style="text-align: left; width: 100px">
+                                    Thương hiệu
+                                </th>
+                                <th style="text-align: left; width: 120px">
+                                    Mã SKU
+                                </th>
+                                <th
+                                    style="text-align: right; width: 80px"
+                                    colspan="1"
+                                >
+                                    Tổng lượt sử dụng
+                                </th>
+                                <th style="text-align: center">Ghi chú</th>
+                            </tr>
+                            <tr class="product-row">
+                                <td style="text-align: center">
+                                    <i class="bi bi-chevron-double-right"></i>
+                                </td>
+                                <td style="text-align: center">
+                                    <label>
+                                        <input type="checkbox" />
+                                        <span class="custom-checkbox"></span>
+                                    </label>
+                                </td>
+                                <td class="img">
+                                    <img
+                                        src="img/loi-1.webp"
+                                        alt="anh-san-pham"
+                                        width="36px"
+                                        height="36px"
+                                    />
+                                </td>
+                                <td class="product-name">
+                                    Máy Lọc Nước Đầu Nguồn 3M AP904
+                                </td>
+                                <td>3M</td>
+                                <td>AP904</td>
+                                <td style="text-align: right" colspan="1">
+                                    25
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr class="product-row">
+                                <td>
+                                    <i class="bi bi-chevron-double-right"></i>
+                                </td>
+                                <td style="text-align: center">
+                                    <label>
+                                        <input type="checkbox" />
+                                        <span class="custom-checkbox"></span>
+                                    </label>
+                                </td>
+                                <td class="img">
+                                    <img
+                                        src="img/loi-1.webp"
+                                        alt="anh-san-pham"
+                                        width="36px"
+                                        height="36px"
+                                    />
+                                </td>
+                                <td class="product-name">
+                                    Combo Máy Lọc Nước Đầu Nguồn 3M AP904...
+                                </td>
+                                <td>3M</td>
+                                <td>AP904</td>
+                                <td style="text-align: right" colspan="1">
+                                    25
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr class="product-row expand-row">
+                                <td>
+                                    <i class="bi bi-chevron-double-down"></i>
+                                </td>
+                                <td style="text-align: center">
+                                    <label>
+                                        <input type="checkbox" />
+                                        <span class="custom-checkbox"></span>
+                                    </label>
+                                </td>
+                                <td class="img">
+                                    <img
+                                        src="img/may-loc.png"
+                                        alt="anh-san-pham"
+                                        width="36px"
+                                        height="36px"
+                                    />
+                                </td>
+                                <td class="product-name">
+                                    Máy Lọc Nước RYO Hyundai RP901
+                                </td>
+                                <td>RYO Hyundai</td>
+                                <td>RP901</td>
+                                <td style="text-align: right" colspan="1">
+                                    25
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr class="product-row sub-row">
+                                <td></td>
+                                <td colspan="7">
+                                    <table class="sub-table">
+                                        <tr>
+                                            <th style="width: 30px"></th>
+                                            <th
+                                                style="
+                                                    text-align: center;
+                                                    width: 52px;
+                                                "
+                                            >
+                                                Ảnh
+                                            </th>
+                                            <th
+                                                style="
+                                                    text-align: left;
+                                                    width: 230px;
+                                                "
+                                            >
+                                                Sản phẩm
+                                            </th>
+                                            <th
+                                                style="
+                                                    text-align: left;
+                                                    width: 120px;
+                                                "
+                                            >
+                                                Thương hiệu
+                                            </th>
+                                            <th
+                                                style="
+                                                    text-align: left;
+                                                    width: 130px;
+                                                "
+                                            >
+                                                Mã SKU
+                                            </th>
+                                            <th
+                                                style="
+                                                    text-align: right;
+                                                    width: 80px;
+                                                "
+                                            >
+                                                Chu kỳ chăm sóc
+                                            </th>
+                                            <th style="text-align: right">
+                                                Giá bán
+                                            </th>
+                                            <th style="width: 180px"></th>
+                                        </tr>
+                                        <tr class="sub-product-row">
+                                            <td></td>
+                                            <td style="text-align: center">
+                                                <img
+                                                    src="img/sub-loi.png"
+                                                    alt="anh-san-pham"
+                                                    width="36px"
+                                                    height="36px"
+                                                />
+                                            </td>
+                                            <td class="sub-product-name">
+                                                Lõi lọc RYO Sediment Filte
+                                            </td>
+                                            <td>3M</td>
+                                            <td>RYO Sediment</td>
+                                            <td style="text-align: right">
+                                                6 tháng
+                                            </td>
+                                            <td style="text-align: right">
+                                                280,000đ
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        <tr class="sub-product-row">
+                                            <td></td>
+                                            <td style="text-align: center">
+                                                <img
+                                                    src="img/sub-loi.png"
+                                                    alt="anh-san-pham"
+                                                    width="36px"
+                                                    height="36px"
+                                                />
+                                            </td>
+                                            <td class="sub-product-name">
+                                                Lõi lọc RYO Pre-Carbon Filter
+                                            </td>
+                                            <td>3M</td>
+                                            <td>RYO Sediment</td>
+                                            <td style="text-align: right">
+                                                6 tháng
+                                            </td>
+                                            <td style="text-align: right">
+                                                280,000đ
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </content>
+    </body>
+</html>

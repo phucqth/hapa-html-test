@@ -673,6 +673,7 @@ aside .sidebar-footer .hotline {
 
 .product-list .item {
   background-color: #f6f6f6;
+  border-radius: 0 0 16px 16px;
 }
 
 .product-list .item .row {
@@ -745,7 +746,8 @@ aside .sidebar-footer .hotline {
 }
 
 .product-list .item + .item {
-  margin-bottom: 32px;
+  margin-top: 32px;
+  border-radius: 16px;
 }
 
 @media (max-width: 1023px) {

@@ -580,6 +580,7 @@ aside {
     }
     .item {
         background-color: #f6f6f6;
+        border-radius: 0 0 16px 16px;
         .row {
             display: flex;
             flex-direction: row;
@@ -645,7 +646,8 @@ aside {
             }
         }
         + .item {
-            margin-bottom: 32px;
+            margin-top: 32px;
+            border-radius: 16px;
         }
     }
 }

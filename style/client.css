@@ -761,3 +761,7 @@ aside .sidebar-footer .hotline {
     display: none !important;
   }
 }
+
+.parent-item {
+  justify-content: space-between;
+}

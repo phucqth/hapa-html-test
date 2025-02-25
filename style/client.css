@@ -460,7 +460,8 @@ aside .sidebar-footer .hotline {
 
 @media (max-width: 1023px) {
   .card .card-content .card-body-content .sub-item-list .sub-item .information .product-name {
-    margin-bottom: 13px;
+    height: 40px;
+    margin-bottom: 7px;
   }
 }
 

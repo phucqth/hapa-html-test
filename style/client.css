@@ -744,6 +744,10 @@ aside .sidebar-footer .hotline {
   border-radius: 0px 0px 10px 10px;
 }
 
+.product-list .item + .item {
+  margin-bottom: 32px;
+}
+
 @media (max-width: 1023px) {
   .desktop-content {
     display: none !important;
